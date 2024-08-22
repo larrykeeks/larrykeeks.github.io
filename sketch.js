@@ -5,6 +5,7 @@ let xpos, ypos;
 function setup() {
   rectMode(CENTER);
   createCanvas(windowWidth, windowHeight);
+  pixelDensity(1);
   xpos = windowWidth / 2;
   ypos = windowHeight / 2;
   x = 0;
