@@ -17,17 +17,17 @@
   background-color: hsl(0, 100%, 70%);
 }
 #project2 {
-  background-color: hsl(15, 100%, 70%);
-}
-#project3 {
   background-color: hsl(30, 100%, 70%);
 }
-#project4 {
-  background-color: hsl(45, 100%, 70%);
-}
-#project5 {
+#project3 {
   background-color: hsl(60, 100%, 70%);
 }
+#project4 {
+  background-color: hsl(90, 100%, 70%);
+}
+#project5 {
+  background-color: hsl(120, 100%, 70%);
+}
 #project6 {
-  background-color: hsl(75, 100%, 70%);
+  background-color: hsl(180, 100%, 70%);
 }
