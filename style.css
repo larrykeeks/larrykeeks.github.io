@@ -1,0 +1,24 @@
+.project {
+  width: 150px;
+  height: 150px; 
+  font-size: 8em;
+  text-align: center;
+}
+#project1 {
+  background-color: red;
+}
+#project2 {
+  background-color: green;
+}
+#project3 {
+  background-color: blue;
+}
+#project4 {
+  background-color: black;
+}
+#project5 {
+  background-color: pink;
+}
+#project6 {
+  background-color: yellow;
+}
