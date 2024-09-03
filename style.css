@@ -3,9 +3,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  //column-gap: 1em;
-  //row-gap: 1em;
-  //justify-content: space-evenly;
 }
 
 .project {
@@ -37,9 +34,5 @@
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
-  }
-  .project {
-    width: 800px;
-    height: 800px;
   }
 }
