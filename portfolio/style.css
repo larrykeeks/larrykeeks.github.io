@@ -8,6 +8,18 @@
   :root {
     color-scheme: dark;
   }
+  h1 {
+    border: 2px solid white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+  h1 {
+    border: 2px solid black;
+  }
 }
 
 body {
@@ -35,7 +47,6 @@ audio {
 h1 {
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid black;
   font-style: italic;
 }
 
