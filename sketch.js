@@ -6,7 +6,6 @@ Write a p5js sketch that draws a painting in the abstract and colorful style of 
 */
 
 // p5.js — Abstract, animated Kandinsky-ish composition (JS only)
-let SEED = 20250811;
 
 let palette = [
   "#f94144","#f3722c","#f8961e","#f9844a","#f9c74f",
@@ -20,14 +19,20 @@ let arcs = [];
 let lines = [];
 let paperTex;
 
+
+function windowResized() {
+  resizeCanvas(select('#sketch').width,select('#sketch').width * 0.8);
+  // Keep original aspect; if you prefer responsive, replace with resizeCanvas(windowWidth, windowHeight);
+  // Here we intentionally keep size stable for composition integrity.
+}
+
 function setup() {
+  const SEED = int(second());
   randomSeed(SEED);
   noiseSeed(SEED);
-  createCanvas(600, 400);
+  createCanvas(select('#sketch').width, select('#sketch').width * 0.8);
   angleMode(RADIANS);
   noCursor();
-
-  makePaperTexture();
 
   // Generate shapes
   for (let i = 0; i < 7; i++) circles.push(new CircleShape());
@@ -53,7 +58,7 @@ function draw() {
   // Paper grain overlay
   push();
   tint(255, 25);
-  image(paperTex, 0, 0);
+  //image(paperTex, 0, 0);
   pop();
 }
 
@@ -289,9 +294,4 @@ function wobble(seed, t, freq, amp) {
 
 function noiseShift(seed, t, freq, amp) {
   return map(noise(seed * 0.1 + t * freq), 0, 1, -amp, amp);
-}
-
-function windowResized() {
-  // Keep original aspect; if you prefer responsive, replace with resizeCanvas(windowWidth, windowHeight);
-  // Here we intentionally keep size stable for composition integrity.
 }
