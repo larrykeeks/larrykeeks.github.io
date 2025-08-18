@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Dark Theme Toggle Pattern
+     Demonstrates: Theme switching with system preference detection
+     Found in: Multiple sites including Nonstandard Studio, technical portfolios
+     Optional enhancements: Multiple themes, per-component theming -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dark Mode Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Creative Portfolio</h1>
+            
+            <div class="header-controls">
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Switch theme">
+                    <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+                    <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero">
+                <h2>Design & Technology</h2>
+                <p>Creating digital experiences that bridge art and engineering.</p>
+            </section>
+
+            <section id="work" class="work-section">
+                <h2>Selected Projects</h2>
+                
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Interactive Installation</h3>
+                            <p>Responsive environment using computer vision and generative audio.</p>
+                            <div class="project-tags">
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">WebGL</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Visualization</h3>
+                            <p>Real-time climate data presented through immersive 3D landscapes.</p>
+                            <div class="project-tags">
+                                <span class="tag">D3.js</span>
+                                <span class="tag">Three.js</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Generative Design Tool</h3>
+                            <p>Browser-based application for creating algorithmic compositions.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Canvas API</span>
+                                <span class="tag">WebAssembly</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <h2>About</h2>
+                <div class="about-content">
+                    <p>I work at the intersection of digital art and emerging technologies, creating experiences that explore human-computer interaction through creative expression.</p>
+                    <p>My practice includes interactive installations, data visualization, and tool development for creative communities.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Get in Touch</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> hello@portfolio.com</p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

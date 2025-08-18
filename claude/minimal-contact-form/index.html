@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Minimal Contact Form Pattern
+     Demonstrates: Clean, accessible contact form with validation
+     Found in: Multiple portfolio sites emphasizing professional contact
+     Optional enhancements: CAPTCHA, file uploads, success animations -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Get in Touch</h1>
+            <p class="site-subtitle">Let's discuss your next project</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:hello@portfolio.com">hello@portfolio.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA<br>Available for remote work</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Response Time</h3>
+                            <p>Usually within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn profile">LinkedIn</a>
+                        <a href="#" class="social-link" aria-label="GitHub profile">GitHub</a>
+                        <a href="#" class="social-link" aria-label="Instagram portfolio">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <h2>Send a Message</h2>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                Name <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required 
+                                aria-describedby="name-error"
+                                autocomplete="name"
+                            >
+                            <div class="error-message" id="name-error" role="alert"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Email <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                aria-describedby="email-error"
+                                autocomplete="email"
+                            >
+                            <div class="error-message" id="email-error" role="alert"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-select" aria-describedby="subject-help">
+                                <option value="">Select a topic</option>
+                                <option value="project">New Project</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="speaking">Speaking Engagement</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="help-text" id="subject-help">Choose the topic that best fits your inquiry</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                Message <span class="required" aria-label="required">*</span>
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="6" 
+                                required 
+                                aria-describedby="message-error message-help"
+                                placeholder="Tell me about your project or idea..."
+                            ></textarea>
+                            <div class="help-text" id="message-help">Please provide details about your project, timeline, and budget if applicable</div>
+                            <div class="error-message" id="message-error" role="alert"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <span class="checkbox-custom" aria-hidden="true"></span>
+                                Subscribe to project updates (optional)
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" aria-hidden="true">Sending...</span>
+                            </button>
+                            <button type="reset" class="reset-btn">Clear Form</button>
+                        </div>
+
+                        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

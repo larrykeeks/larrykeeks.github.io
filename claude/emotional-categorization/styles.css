@@ -1,0 +1,307 @@
+/* Emotional Categorization Pattern
+   Project organization by emotional themes and moods
+   Inspired by Aaron Demby Jones (Studio Demby) innovation */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Emotion filter navigation */
+.emotion-filter {
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.filter-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #495057;
+    font-weight: 400;
+}
+
+.emotion-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.emotion-btn {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.emotion-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-color: #ced4da;
+}
+
+.emotion-btn:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+.emotion-btn.active {
+    background: #007bff;
+    border-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,123,255,0.3);
+}
+
+.emotion-icon {
+    font-size: 1.1rem;
+}
+
+.emotion-count {
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Emotional color themes */
+.resonant { --emotion-color: #e74c3c; --emotion-bg: #fdf2f2; }
+.contemplative { --emotion-color: #3498db; --emotion-bg: #f0f8ff; }
+.energetic { --emotion-color: #f39c12; --emotion-bg: #fef9e7; }
+.melancholic { --emotion-color: #9b59b6; --emotion-bg: #f8f4fd; }
+.playful { --emotion-color: #2ecc71; --emotion-bg: #f0fff4; }
+
+/* Main content */
+.main-content {
+    padding: 3rem 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-card.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+.project-image {
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--emotion-bg);
+    border-left: 4px solid var(--emotion-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--emotion-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.emotion-tags {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.emotion-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.emotion-tag.resonant { background: #fdf2f2; color: #e74c3c; }
+.emotion-tag.contemplative { background: #f0f8ff; color: #3498db; }
+.emotion-tag.energetic { background: #fef9e7; color: #f39c12; }
+.emotion-tag.melancholic { background: #f8f4fd; color: #9b59b6; }
+.emotion-tag.playful { background: #f0fff4; color: #2ecc71; }
+
+.project-description {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.project-year {
+    color: #adb5bd;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Filter animations */
+.projects-grid {
+    transition: all 0.3s ease;
+}
+
+.project-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .emotion-buttons {
+        gap: 0.5rem;
+    }
+    
+    .emotion-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .emotion-label {
+        display: none;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .site-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .emotion-btn {
+        padding: 0.5rem;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .emotion-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-2px) scale(1);
+    }
+    
+    .project-card.hidden {
+        transform: scale(1);
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .project-card {
+        border: 2px solid #000;
+    }
+    
+    .emotion-btn {
+        border-width: 2px;
+    }
+    
+    .emotion-btn.active {
+        background: #000;
+        border-color: #000;
+    }
+}

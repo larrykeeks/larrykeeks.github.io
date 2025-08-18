@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Bilingual Toggle Pattern
+     Demonstrates: Simple language switching for international portfolios
+     Found in: Sofian Audry, international artist sites
+     Minimal implementation based on corpus analysis -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio - Bilingual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .lang-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin: 0 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .lang-btn.active {
+            background: #0056b3;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Content sections */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        /* Language content control */
+        .en { display: block; }
+        .fr { display: none; }
+
+        /* When French is active */
+        body.french .en { display: none; }
+        body.french .fr { display: block; }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <span class="en">Artist Portfolio</span>
+                <span class="fr">Portfolio d'Artiste</span>
+            </h1>
+            <p class="subtitle">
+                <span class="en">Digital art and interactive media</span>
+                <span class="fr">Art numérique et médias interactifs</span>
+            </p>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2>
+                    <span class="en">About</span>
+                    <span class="fr">À Propos</span>
+                </h2>
+                <p>
+                    <span class="en">I am a digital artist exploring the intersection of technology and creative expression. My work focuses on interactive installations and generative art systems.</span>
+                    <span class="fr">Je suis un artiste numérique explorant l'intersection entre technologie et expression créative. Mon travail se concentre sur les installations interactives et les systèmes d'art génératif.</span>
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>
+                    <span class="en">Selected Works</span>
+                    <span class="fr">Œuvres Sélectionnées</span>
+                </h2>
+                <div>
+                    <h3>
+                        <span class="en">Interactive Landscapes</span>
+                        <span class="fr">Paysages Interactifs</span>
+                    </h3>
+                    <p>
+                        <span class="en">An exploration of digital environments that respond to human presence through sensors and real-time data processing.</span>
+                        <span class="fr">Une exploration d'environnements numériques qui répondent à la présence humaine grâce à des capteurs et au traitement de données en temps réel.</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>
+                    <span class="en">Contact</span>
+                    <span class="fr">Contact</span>
+                </h2>
+                <p>
+                    <span class="en">Email: artist@example.com</span>
+                    <span class="fr">Courriel: artist@example.com</span>
+                </p>
+                <p>
+                    <span class="en">Location: Montreal, Canada</span>
+                    <span class="fr">Localisation: Montréal, Canada</span>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            // Update body class
+            document.body.className = lang === 'fr' ? 'french' : '';
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            event.target.classList.add('active');
+            
+            // Update document language
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>

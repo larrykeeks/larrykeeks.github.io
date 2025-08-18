@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Hamburger Menu Pattern
+     Demonstrates: Mobile-first navigation with accessible hamburger menu
+     Found in: Multiple responsive sites in corpus analysis
+     Optional enhancements: Slide-in animations, sub-menu support -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio - Hamburger Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">
+                    <a href="#home">Portfolio</a>
+                </h1>
+                
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#work" class="nav-link">Work</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-footer">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="GitHub">🔗</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                    </div>
+                    <p class="nav-contact">hello@portfolio.com</p>
+                </div>
+            </nav>
+            
+            <div class="menu-overlay" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section id="home" class="hero-section">
+                <h2>Creative Designer & Developer</h2>
+                <p>Building digital experiences that connect people with technology.</p>
+                <button class="cta-button">View Recent Work</button>
+            </section>
+
+            <section id="work" class="work-section">
+                <h2>Featured Projects</h2>
+                <div class="project-preview-grid">
+                    <div class="project-preview">
+                        <div class="preview-image"></div>
+                        <h3>Mobile App Design</h3>
+                        <p>User experience design for sustainable living app.</p>
+                    </div>
+                    <div class="project-preview">
+                        <div class="preview-image"></div>
+                        <h3>Interactive Website</h3>
+                        <p>Museum exhibition site with virtual gallery tours.</p>
+                    </div>
+                    <div class="project-preview">
+                        <div class="preview-image"></div>
+                        <h3>Brand Identity</h3>
+                        <p>Complete visual identity for tech startup.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>I'm a designer and developer passionate about creating meaningful digital experiences. With a background in both visual design and front-end development, I bridge the gap between aesthetic vision and technical implementation.</p>
+                    <p>My work spans mobile apps, interactive websites, and digital art installations.</p>
+                </div>
+            </section>
+
+            <section id="services" class="services-section">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>UX/UI Design</h3>
+                        <p>User-centered design for web and mobile applications.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Front-End Development</h3>
+                        <p>Modern web development with React, Vue, and vanilla JavaScript.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Creative Technology</h3>
+                        <p>Interactive installations and experimental digital media.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Let's Work Together</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> hello@portfolio.com</p>
+                    <p><strong>Location:</strong> Available for remote work</p>
+                    <button class="contact-button">Start a Project</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

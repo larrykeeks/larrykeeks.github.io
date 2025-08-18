@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- Image Gallery Masonry Pattern
+     Demonstrates: Pinterest-style masonry grid for portfolio images
+     Found in: 8+ visual portfolio sites in corpus analysis
+     Optional enhancements: Infinite scroll, lightbox integration, search -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Portfolio - Masonry Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="container">
+            <h1 class="gallery-title">Visual Portfolio</h1>
+            <p class="gallery-subtitle">A collection of creative works</p>
+        </div>
+    </header>
+
+    <nav class="gallery-controls" aria-label="Gallery filters and controls">
+        <div class="container">
+            <div class="filter-buttons" role="group" aria-label="Filter gallery by category">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All Work</button>
+                <button class="filter-btn" data-filter="photography" aria-pressed="false">Photography</button>
+                <button class="filter-btn" data-filter="digital" aria-pressed="false">Digital Art</button>
+                <button class="filter-btn" data-filter="installation" aria-pressed="false">Installations</button>
+                <button class="filter-btn" data-filter="print" aria-pressed="false">Print Design</button>
+            </div>
+            
+            <div class="view-options">
+                <button class="view-btn active" data-view="masonry" aria-label="Masonry view" title="Masonry layout">
+                    <span aria-hidden="true">⬜</span>
+                </button>
+                <button class="view-btn" data-view="grid" aria-label="Grid view" title="Uniform grid">
+                    <span aria-hidden="true">▦</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid masonry" id="gallery-grid" role="region" aria-label="Image gallery">
+                
+                <!-- Photography items -->
+                <article class="gallery-item" data-category="photography">
+                    <div class="item-image tall">
+                        <div class="image-placeholder">Portrait Series</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Urban Portraits</h3>
+                        <p class="item-category">Photography</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="photography">
+                    <div class="item-image wide">
+                        <div class="image-placeholder">Landscape</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Desert Landscapes</h3>
+                        <p class="item-category">Photography</p>
+                        <p class="item-year">2023</p>
+                    </div>
+                </article>
+
+                <!-- Digital art items -->
+                <article class="gallery-item" data-category="digital">
+                    <div class="item-image square">
+                        <div class="image-placeholder">Generative</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Algorithmic Patterns</h3>
+                        <p class="item-category">Digital Art</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="digital">
+                    <div class="item-image tall">
+                        <div class="image-placeholder">3D Render</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Virtual Sculptures</h3>
+                        <p class="item-category">Digital Art</p>
+                        <p class="item-year">2023</p>
+                    </div>
+                </article>
+
+                <!-- Installation items -->
+                <article class="gallery-item" data-category="installation">
+                    <div class="item-image wide">
+                        <div class="image-placeholder">Interactive</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Responsive Environment</h3>
+                        <p class="item-category">Installation</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="installation">
+                    <div class="item-image square">
+                        <div class="image-placeholder">Kinetic</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Moving Sculptures</h3>
+                        <p class="item-category">Installation</p>
+                        <p class="item-year">2023</p>
+                    </div>
+                </article>
+
+                <!-- Print design items -->
+                <article class="gallery-item" data-category="print">
+                    <div class="item-image tall">
+                        <div class="image-placeholder">Typography</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Exhibition Catalog</h3>
+                        <p class="item-category">Print Design</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="print">
+                    <div class="item-image square">
+                        <div class="image-placeholder">Layout</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Brand Identity</h3>
+                        <p class="item-category">Print Design</p>
+                        <p class="item-year">2023</p>
+                    </div>
+                </article>
+
+                <!-- Additional mixed items -->
+                <article class="gallery-item" data-category="digital photography">
+                    <div class="item-image wide">
+                        <div class="image-placeholder">Hybrid Media</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Digital Collages</h3>
+                        <p class="item-category">Digital Art</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="installation digital">
+                    <div class="item-image tall">
+                        <div class="image-placeholder">Tech Art</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>AI Mirror</h3>
+                        <p class="item-category">Installation</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="photography">
+                    <div class="item-image square">
+                        <div class="image-placeholder">Documentary</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Community Stories</h3>
+                        <p class="item-category">Photography</p>
+                        <p class="item-year">2023</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item" data-category="print digital">
+                    <div class="item-image wide">
+                        <div class="image-placeholder">Cross-Media</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Publication Design</h3>
+                        <p class="item-category">Print Design</p>
+                        <p class="item-year">2024</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

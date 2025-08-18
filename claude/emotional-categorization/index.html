@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- Emotional Categorization Pattern
+     Demonstrates: Project organization by emotional themes/moods
+     Found in: Aaron Demby Jones (Studio Demby) - unique innovation
+     Optional enhancements: Mood filtering, emotional analytics, color-coded categories -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Portfolio - Feeling-Based Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Creative Studio</h1>
+            <p class="tagline">Projects organized by emotional resonance</p>
+        </div>
+    </header>
+
+    <nav class="emotion-filter" aria-label="Filter projects by emotional category">
+        <div class="container">
+            <h2 class="filter-title">Explore by Feeling</h2>
+            <div class="emotion-buttons" role="group" aria-label="Emotional categories">
+                <button class="emotion-btn active" data-emotion="all" aria-pressed="true">
+                    <span class="emotion-icon">✨</span>
+                    <span class="emotion-label">All</span>
+                </button>
+                <button class="emotion-btn" data-emotion="resonant" aria-pressed="false">
+                    <span class="emotion-icon">🎵</span>
+                    <span class="emotion-label">Resonant</span>
+                </button>
+                <button class="emotion-btn" data-emotion="contemplative" aria-pressed="false">
+                    <span class="emotion-icon">🧘</span>
+                    <span class="emotion-label">Contemplative</span>
+                </button>
+                <button class="emotion-btn" data-emotion="energetic" aria-pressed="false">
+                    <span class="emotion-icon">⚡</span>
+                    <span class="emotion-label">Energetic</span>
+                </button>
+                <button class="emotion-btn" data-emotion="melancholic" aria-pressed="false">
+                    <span class="emotion-icon">🌧️</span>
+                    <span class="emotion-label">Melancholic</span>
+                </button>
+                <button class="emotion-btn" data-emotion="playful" aria-pressed="false">
+                    <span class="emotion-icon">🎈</span>
+                    <span class="emotion-label">Playful</span>
+                </button>
+            </div>
+            <div class="emotion-count" aria-live="polite">
+                <span id="count-display">12 projects</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- Resonant projects -->
+                <article class="project-card" data-emotions="resonant">
+                    <div class="project-image resonant">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Harmonic Landscapes</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag resonant">Resonant</span>
+                        </p>
+                        <p class="project-description">Sound installation creating spatial harmony through algorithmic composition.</p>
+                        <p class="project-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-emotions="resonant contemplative">
+                    <div class="project-image contemplative">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Breathing Light</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag resonant">Resonant</span>
+                            <span class="emotion-tag contemplative">Contemplative</span>
+                        </p>
+                        <p class="project-description">Interactive light sculpture responding to collective breathing patterns.</p>
+                        <p class="project-year">2023</p>
+                    </div>
+                </article>
+
+                <!-- Contemplative projects -->
+                <article class="project-card" data-emotions="contemplative">
+                    <div class="project-image contemplative">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Slow Networks</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag contemplative">Contemplative</span>
+                        </p>
+                        <p class="project-description">Digital meditation on connection and isolation in networked society.</p>
+                        <p class="project-year">2024</p>
+                    </div>
+                </article>
+
+                <!-- Energetic projects -->
+                <article class="project-card" data-emotions="energetic playful">
+                    <div class="project-image energetic">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dance Machine</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag energetic">Energetic</span>
+                            <span class="emotion-tag playful">Playful</span>
+                        </p>
+                        <p class="project-description">Motion-reactive installation encouraging spontaneous movement and play.</p>
+                        <p class="project-year">2023</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-emotions="energetic">
+                    <div class="project-image energetic">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Urban Pulse</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag energetic">Energetic</span>
+                        </p>
+                        <p class="project-description">Real-time visualization of city data through dynamic color and sound.</p>
+                        <p class="project-year">2024</p>
+                    </div>
+                </article>
+
+                <!-- Melancholic projects -->
+                <article class="project-card" data-emotions="melancholic contemplative">
+                    <div class="project-image melancholic">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Memory Palace</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag melancholic">Melancholic</span>
+                            <span class="emotion-tag contemplative">Contemplative</span>
+                        </p>
+                        <p class="project-description">Virtual archive exploring loss and preservation in digital spaces.</p>
+                        <p class="project-year">2022</p>
+                    </div>
+                </article>
+
+                <!-- Playful projects -->
+                <article class="project-card" data-emotions="playful">
+                    <div class="project-image playful">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Generative Creatures</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag playful">Playful</span>
+                        </p>
+                        <p class="project-description">AI-generated characters that evolve based on viewer interaction.</p>
+                        <p class="project-year">2024</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-emotions="playful energetic">
+                    <div class="project-image playful">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Color Symphony</h3>
+                        <p class="emotion-tags">
+                            <span class="emotion-tag playful">Playful</span>
+                            <span class="emotion-tag energetic">Energetic</span>
+                        </p>
+                        <p class="project-description">Interactive painting tool creating music through color selection.</p>
+                        <p class="project-year">2023</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

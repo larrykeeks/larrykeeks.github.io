@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Filter Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
+    PATTERN: Category Filter Grid
+    DEMONSTRATES: Filterable project grid with category-based organization
+    ENHANCEMENTS: Add search functionality, sort options, URL-based filtering, animation transitions
+    -->
+</head>
+<body>
+    <header>
+        <h1>Project Portfolio</h1>
+        <p>Filter projects by category to explore different areas of work</p>
+    </header>
+
+    <main>
+        <div class="filter-controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all" aria-pressed="true">All Projects</button>
+                <button class="filter-btn" data-category="interactive" aria-pressed="false">Interactive Media</button>
+                <button class="filter-btn" data-category="research" aria-pressed="false">Research</button>
+                <button class="filter-btn" data-category="software" aria-pressed="false">Software</button>
+                <button class="filter-btn" data-category="performance" aria-pressed="false">Performance</button>
+                <button class="filter-btn" data-category="teaching" aria-pressed="false">Teaching</button>
+            </div>
+            
+            <div class="results-count" aria-live="polite">
+                <span id="resultCount">12</span> projects found
+            </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <article class="project-card" data-categories="interactive digital-art">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Resonant Spaces</h3>
+                    <p>Interactive installation exploring human-machine relationships through motion sensors and generative audio.</p>
+                    <div class="project-meta">
+                        <span class="category-tag interactive">Interactive Media</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="research academic">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Computational Creativity Study</h3>
+                    <p>Research on AI-human collaboration in creative environments, published in Journal of Creative Technologies.</p>
+                    <div class="project-meta">
+                        <span class="category-tag research">Research</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="software web-dev">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Collaborative Music Platform</h3>
+                    <p>Real-time web application for collaborative music composition using WebRTC and Web Audio API.</p>
+                    <div class="project-meta">
+                        <span class="category-tag software">Software</span>
+                        <span class="year">2023</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="performance live-coding">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Algorithmic Composition</h3>
+                    <p>Live coding performance combining traditional musical elements with computational processes.</p>
+                    <div class="project-meta">
+                        <span class="category-tag performance">Performance</span>
+                        <span class="year">2023</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="interactive data-viz">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Climate Data Visualization</h3>
+                    <p>Generative art installation representing climate data through real-time interactive visualizations.</p>
+                    <div class="project-meta">
+                        <span class="category-tag interactive">Interactive Media</span>
+                        <span class="year">2022</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="interactive vr">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>VR Emotional Expression</h3>
+                    <p>Immersive virtual reality environment for emotional expression and therapeutic applications.</p>
+                    <div class="project-meta">
+                        <span class="category-tag interactive">Interactive Media</span>
+                        <span class="year">2022</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="teaching curriculum">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Creative Computing Course</h3>
+                    <p>Innovative curriculum design integrating art and technology education for undergraduate students.</p>
+                    <div class="project-meta">
+                        <span class="category-tag teaching">Teaching</span>
+                        <span class="year">2021</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="research funding">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>NSF Grant Research</h3>
+                    <p>Funded research project on augmented creativity and AI-human collaboration in artistic practice.</p>
+                    <div class="project-meta">
+                        <span class="category-tag research">Research</span>
+                        <span class="year">2020</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="software mobile">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Mobile Art Creation App</h3>
+                    <p>iOS and Android application for collaborative digital art creation with real-time synchronization.</p>
+                    <div class="project-meta">
+                        <span class="category-tag software">Software</span>
+                        <span class="year">2021</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="performance installation">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #ff8a80 0%, #ea80fc 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Sonic Architecture</h3>
+                    <p>Large-scale sound installation and performance piece exploring spatial audio and architectural acoustics.</p>
+                    <div class="project-meta">
+                        <span class="category-tag performance">Performance</span>
+                        <span class="year">2022</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="teaching workshop">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>AI Art Workshop Series</h3>
+                    <p>Community workshop series teaching AI tools and techniques for creative expression to artists and designers.</p>
+                    <div class="project-meta">
+                        <span class="category-tag teaching">Teaching</span>
+                        <span class="year">2023</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-categories="research publication">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>HCI Conference Paper</h3>
+                    <p>Peer-reviewed paper on gesture-based interfaces for creative applications, presented at CHI 2023.</p>
+                    <div class="project-meta">
+                        <span class="category-tag research">Research</span>
+                        <span class="year">2023</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

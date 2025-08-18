@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
+    PATTERN: Timeline Presentation
+    DEMONSTRATES: Chronological project timeline with responsive behavior
+    ENHANCEMENTS: Add filtering by year/type, animated reveals, interactive timeline scrubbing
+    -->
+</head>
+<body>
+    <header>
+        <h1>Academic & Creative Journey</h1>
+        <p>A chronological view of research, publications, and creative works</p>
+    </header>
+
+    <main>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <article class="timeline-item" data-year="2024">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">2024</time>
+                    <h3>Digital Installation Premiere</h3>
+                    <p>Premiered "Resonant Spaces" at the Museum of Digital Art. The interactive installation explores human-machine relationships through motion sensors and generative audio.</p>
+                    <div class="timeline-tags">
+                        <span class="tag installation">Installation</span>
+                        <span class="tag digital-art">Digital Art</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2024">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">March 2024</time>
+                    <h3>Research Publication</h3>
+                    <p>Published "Computational Creativity in Collaborative Environments" in the Journal of Creative Technologies. Co-authored with researchers from MIT and Stanford.</p>
+                    <div class="timeline-tags">
+                        <span class="tag research">Research</span>
+                        <span class="tag publication">Publication</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2023">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">December 2023</time>
+                    <h3>Collaborative Music Platform</h3>
+                    <p>Launched web application for real-time collaborative music composition. Built with WebRTC and Web Audio API, serving 500+ musicians worldwide.</p>
+                    <div class="timeline-tags">
+                        <span class="tag software">Software</span>
+                        <span class="tag music">Music Tech</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2023">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">September 2023</time>
+                    <h3>ICMC Performance</h3>
+                    <p>Live coding performance at the International Computer Music Conference. Algorithmic composition combining traditional musical elements with computational processes.</p>
+                    <div class="timeline-tags">
+                        <span class="tag performance">Performance</span>
+                        <span class="tag live-coding">Live Coding</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2023">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">June 2023</time>
+                    <h3>PhD Dissertation Defense</h3>
+                    <p>Successfully defended dissertation on "Emergent Behaviors in Human-AI Creative Collaboration" at University of California, San Diego.</p>
+                    <div class="timeline-tags">
+                        <span class="tag academic">Academic</span>
+                        <span class="tag milestone">Milestone</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2022">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">November 2022</time>
+                    <h3>Climate Data Visualization</h3>
+                    <p>Created generative art installation representing climate data through real-time visualizations. Exhibited at the Environmental Art Gallery in San Francisco.</p>
+                    <div class="timeline-tags">
+                        <span class="tag visualization">Data Viz</span>
+                        <span class="tag environmental">Environmental</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2022">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">August 2022</time>
+                    <h3>VR Emotional Expression</h3>
+                    <p>Developed immersive VR environment for emotional expression and therapy applications. Collaboration with UCSF Medical Center for mental health research.</p>
+                    <div class="timeline-tags">
+                        <span class="tag vr">Virtual Reality</span>
+                        <span class="tag health">Health Tech</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2021">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">May 2021</time>
+                    <h3>Teaching Excellence Award</h3>
+                    <p>Received Teaching Excellence Award for innovative curriculum design in "Creative Computing" course, integrating art and technology education.</p>
+                    <div class="timeline-tags">
+                        <span class="tag teaching">Teaching</span>
+                        <span class="tag award">Award</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="timeline-item" data-year="2020">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <time class="timeline-date">March 2020</time>
+                    <h3>NSF Grant Award</h3>
+                    <p>Awarded $150,000 NSF grant for research on "Augmented Creativity: AI-Human Collaboration in Artistic Practice." Three-year funding period.</p>
+                    <div class="timeline-tags">
+                        <span class="tag funding">Grant</span>
+                        <span class="tag research">Research</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="timeline-filters">
+            <h3>Filter by Type</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="installation">Installations</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="performance">Performances</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail Modal</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
+    PATTERN: Project Detail Modal
+    DEMONSTRATES: Lightbox-style project viewer with keyboard navigation and accessibility
+    ENHANCEMENTS: Add image galleries, video support, social sharing, fullscreen mode
+    -->
+</head>
+<body>
+    <header>
+        <h1>Project Portfolio</h1>
+        <p>Click any project to view details in the modal viewer</p>
+    </header>
+
+    <main>
+        <div class="projects-grid">
+            <article class="project-card" data-project="digital-installation">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Digital Installation</h3>
+                    <p>Interactive media art exploring human-machine relationships</p>
+                    <button class="view-project-btn" aria-label="View Digital Installation project details">View Details</button>
+                </div>
+            </article>
+
+            <article class="project-card" data-project="research-publication">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Research Publication</h3>
+                    <p>Computational creativity in collaborative environments</p>
+                    <button class="view-project-btn" aria-label="View Research Publication project details">View Details</button>
+                </div>
+            </article>
+
+            <article class="project-card" data-project="web-application">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Web Application</h3>
+                    <p>Tool for collaborative music composition</p>
+                    <button class="view-project-btn" aria-label="View Web Application project details">View Details</button>
+                </div>
+            </article>
+
+            <article class="project-card" data-project="sound-performance">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Sound Performance</h3>
+                    <p>Algorithmic composition with live coding</p>
+                    <button class="view-project-btn" aria-label="View Sound Performance project details">View Details</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+            <button class="modal-close" aria-label="Close project details modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="placeholder-image" id="modalImage" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                </div>
+                
+                <div class="modal-details">
+                    <h2 id="modalTitle">Project Title</h2>
+                    <p class="modal-meta" id="modalMeta">2024 • Interactive Installation</p>
+                    <div class="modal-description" id="modalDescription">
+                        <p>Detailed project description will appear here...</p>
+                    </div>
+                    
+                    <div class="modal-tags" id="modalTags">
+                        <span class="tag">Interactive Media</span>
+                        <span class="tag">Digital Art</span>
+                        <span class="tag">Human-Computer Interaction</span>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="#" class="btn btn-primary" id="modalLink">View Live Project</a>
+                        <button class="btn btn-secondary" id="modalShare">Share Project</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-navigation">
+                <button class="nav-btn prev-btn" id="prevProject" aria-label="Previous project">
+                    <span aria-hidden="true">‹</span>
+                </button>
+                <button class="nav-btn next-btn" id="nextProject" aria-label="Next project">
+                    <span aria-hidden="true">›</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

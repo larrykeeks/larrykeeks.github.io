@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Portfolio Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
+    PATTERN: Minimal Portfolio Grid
+    DEMONSTRATES: Standard portfolio grid with responsive behavior, card-based project display
+    ENHANCEMENTS: Add filtering, lazy loading, hover animations, project detail pages
+    -->
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="work" class="portfolio-grid">
+            <h2 class="sr-only">Portfolio Projects</h2>
+            
+            <article class="project-card" tabindex="0" role="button" aria-label="Project 1: Digital Installation">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Digital Installation</h3>
+                    <p>Interactive media art exploring human-machine relationships</p>
+                    <span class="project-year">2024</span>
+                </div>
+            </article>
+
+            <article class="project-card" tabindex="0" role="button" aria-label="Project 2: Research Publication">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Research Publication</h3>
+                    <p>Computational creativity in collaborative environments</p>
+                    <span class="project-year">2024</span>
+                </div>
+            </article>
+
+            <article class="project-card" tabindex="0" role="button" aria-label="Project 3: Web Application">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Web Application</h3>
+                    <p>Tool for collaborative music composition</p>
+                    <span class="project-year">2023</span>
+                </div>
+            </article>
+
+            <article class="project-card" tabindex="0" role="button" aria-label="Project 4: Sound Performance">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Sound Performance</h3>
+                    <p>Algorithmic composition with live coding</p>
+                    <span class="project-year">2023</span>
+                </div>
+            </article>
+
+            <article class="project-card" tabindex="0" role="button" aria-label="Project 5: Data Visualization">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Data Visualization</h3>
+                    <p>Climate data represented through generative art</p>
+                    <span class="project-year">2022</span>
+                </div>
+            </article>
+
+            <article class="project-card" tabindex="0" role="button" aria-label="Project 6: VR Experience">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>VR Experience</h3>
+                    <p>Immersive environment for emotional expression</p>
+                    <span class="project-year">2022</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
