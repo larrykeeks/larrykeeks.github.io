@@ -1,0 +1,79 @@
+url,site_name,site_type,cms_or_framework,css_style,js_presence,patterns_present,has_skip_link,focus_visible,og_tags,schema_org,est_img_strategy,perf_weight
+https://jonasjoergensen.org,Jonas Jørgensen,Academic Portfolio,WordPress.com,CSS Grid,light,Academic Timeline;Minimal Portfolio Navigation,no,basic,basic implementation,none evident,basic,light
+https://www.majasmrekar.org,Maja Smrekar,Academic Portfolio,Squarespace,CSS Grid,med,Minimal Portfolio Grid;Image-First Navigation,no,standard,squarespace defaults,minimal,lazy,med
+https://gregoryreardon.com,Gregory Reardon,Research Lab,Jekyll,Platform Default,light,Academic Profile Header;Research Achievement Display;Animated Download Indicators,no,good,basic implementation,json-ld schema,basic,light
+http://infosyncratic.nl,Infosyncratic,Portfolio,Unknown,Platform Default,unknown,,unknown,unknown,unknown,unknown,basic,unknown
+https://ramakarl.com,Rama Hoetzlein,Academic Portfolio,WordPress Custom,CSS Grid,unknown,Technical Portfolio Grid;Research-Art Integration,no,standard,basic wordpress implementation,none evident,srcset,med
+https://mhetrick.com,Michael Hetrick,Artist Portfolio,WordPress.com,Platform Default,light,Dark Professional Theme;Minimal Bio Layout,no,good,wordpress,none evident,basic,light
+https://www.adrienejenik.net,Adriene Jenik,Academic Portfolio,Squarespace,CSS Grid,heavy,Multidisciplinary Identity Presentation;Accessibility-First Design;Announcement Bar Pattern,no,standard,squarespace implementation,minimal squarespace defaults,lazy,med
+https://macumbista.net,Derek Holzer (Macumbista),Academic Portfolio,WordPress Custom,Platform Default,light,Research Documentation Blog;Minimal Academic Design,no,standard,basic wordpress implementation,none evident,basic,light
+http://albertoestevez.es,Alberto Estevez,Portfolio,Unknown,Platform Default,unknown,,unknown,unknown,unknown,unknown,basic,unknown
+https://interface.ufg.ac.at/christa-laurent,Christa Laurent & Laurent Mignonneau,Artist Portfolio,Custom HTML/CSS,Platform Default,light,Chronological Art Archive;Minimal Academic Portfolio;Custom Thumbnail Positioning,no,minimal,none evident,none,basic,med
+https://raster-media.net,Raster Media,Artist Portfolio,WordPress/WooCommerce,CSS Grid,unknown,Artistic E-commerce Integration;Minimal Monochromatic Design;Newsletter-First Engagement,no,standard,wordpress/woocommerce defaults,json-ld metadata for products/organization,lazy,med
+https://casperelectronics.com,Casper Electronics,Experimental Portfolio,WordPress Custom,CSS Grid,unknown,Sophisticated Product Carousels;Accordion Product Specifications;Custom Cursor Interactions;Animated Marquee Elements,no,custom focus states,good product-focused implementation,likely product schema for e-commerce,lazy,heavy
+https://www.yeahsnos.com,Yasaman Sheri (Yeah/Nos Studio),Professional Portfolio,Squarespace,Flexbox,light,Interactive Canvas Background;Narrative-Driven Portfolio;Minimal Text-Focused Design,no,standard,squarespace defaults,minimal,basic,med
+https://www.lovid.org,LoVid,Artist Portfolio,Static Site,Platform Default,light,Experimental Art Grid;Collaborative Artist Documentation;Minimal Touch-Friendly Portfolio,no,minimal,likely minimal,none evident,basic,heavy
+https://www.sharondaniel.net,Sharon Daniel,Academic Portfolio,Squarespace,Platform Default,unknown,Interactive Documentary Interface;Testimonial-Driven Narratives;Multimedia Archive Presentation,no,standard,good for multimedia content sharing,minimal,lazy,heavy
+https://emilywhiteprojects.com,Emily White Projects,Artist Portfolio,Cargo Collective,Platform Default,light,Custom Thumbnail Positioning;Fullscreen Gallery Modal;SVG Navigation Icons,no,custom focus states,cargo collective defaults,none evident,basic,heavy
+https://www.skyemoret.com,Skye Moret,Research Lab,Cargo Collective,Platform Default,light,Scientific Design Documentation;Adventure-Science Integration,no,custom states,cargo collective defaults,none evident,basic,med
+https://sofianaudry.com,Sofian Audry,Research Lab,WordPress/Elementor,CSS Grid,unknown,AI Art Documentation;Bilingual Academic Portfolio;Minimal Tech-Art Aesthetic,no,standard,wordpress with custom optimization,json-ld for artist/researcher profile,lazy,med
+https://www.irenekuling.nl,Irene Kuling,Research Lab,WordPress Custom,Platform Default,light,Academic-Community Integration;Multilingual Professional Presence;Clean Sidebar Academic Layout,no,good,basic wordpress implementation,none evident,basic,light
+https://www.batdorf.org,Erika Batdorf,Research Lab,Static Site,Flexbox,light,Performance Documentation Structure;Interactive Technique Teaching;Mobile-First Performance Portfolio,no,excellent custom focus states,custom implementation for performance content,json-ld for performing artist profile,basic,light
+https://nonstandardstudio.com,Nonstandard Studio,Academic Portfolio,WordPress/Elementor,Platform Default,light,Dark Research Aesthetic;Deep Learning Visualization;Minimal Research Portfolio,no,standard,wordpress with social media integration,none evident,lazy,med
+https://mengjiazhu.webflow.io,Mengjia Zhu,Research Lab,Webflow,Platform Default,unknown,Research Publication Cards;Technical Skills Highlighting;Academic Credential Integration,no,standard,webflow defaults with academic optimization,none evident,basic,med
+https://www.shashankaswath.com,Shashanka Aswath,Professional Portfolio,Wix Thunderbolt,CSS Grid,unknown,Sophisticated CSS Variable Architecture;Advanced View Transition Animations;Professional Minimalism with Technical Depth,no,excellent custom focus states,wix platform optimization,json-ld schema implementation,basic,med
+https://somayehdodge.info,Somayeh Dodge,Research Lab,WordPress Custom,Platform Default,light,Comprehensive Academic Timeline;Research Group Integration;Academic Typography Optimization,no,good,wordpress academic optimization,none evident,basic,light
+https://www.lutyens.com,Marcos Lutyens,Artist Portfolio,Custom HTML/CSS,Platform Default,light,Chronological Art Archive;Multimedia Project Presentation;Minimal Archive Aesthetic,no,standard,basic implementation,none evident,lazy,med
+https://www.lucianparisi.work,Lucian Parisi,Research Lab,Squarespace,CSS Grid,unknown,Interdisciplinary Creative Portfolio;Algorithmic/Generative Art Presentation;Academic-Creative Integration,no,standard,squarespace with multimedia optimization,json-ld for creative professional profile,basic,med
+https://simonpenny.net,Simon Penny,Portfolio,Unknown,Platform Default,light,,unknown,unknown,unknown,unknown,basic,unknown
+https://gaoyueh8.wixsite.com/home,Gao Yue,Artist Portfolio,Wix Thunderbolt,CSS Grid,unknown,Advanced Wix Template Architecture;Comprehensive Component Library;Sophisticated Animation Framework,no,advanced focus management,wix platform optimization,platform schema implementation,lazy,heavy
+https://www.hostprods.net,Andy Gracie (Host Productions),Academic Portfolio,Squarespace,Platform Default,unknown,Scientific Art Categorization;High-Contrast Scientific Imagery;Minimal Scientific Portfolio,no,standard,squarespace with artistic content optimization,schema,basic,heavy
+https://nefeliman.com,Nefeli Manoudaki,Artist Portfolio,Unknown,Platform Default,unknown,Bio-Inspired Design Documentation;Interdisciplinary Project Visualization;Hashtag-Style Project Metadata,no,standard,platform optimization for design content,none evident,basic,med
+https://www.kayladesportes.com,Dr. Kayla DesPortes,Research Lab,Hugo,Platform Default,unknown,Academic Research Portfolio;Student Recruitment Integration;Interdisciplinary Research Presentation,no,good,academic theme optimization,json-ld schema markup for academic profiles,basic,light
+https://www.jakobsteensen.com,Jakob Kudsk Steensen,Artist Portfolio,Squarespace,Platform Default,unknown,Immersive Digital Art Presentation;Ecological Art Theming;Minimal Digital Gallery,no,standard,squarespace with artistic content optimization,json-ld metadata for digital artist profile,lazy,heavy
+https://www.studiodemby.com,Aaron Demby Jones (Studio Demby),Artist Portfolio,Next.js/React,Platform Default,unknown,Emotional Project Categorization;Experimental Artist Positioning;Minimal Content-First Design,no,good,comprehensive metadata with twitter card support,rss feed available for content syndication,basic,light
+https://www.alexisstorycrawshaw.com,Alexis Story Crawshaw,Research Lab,Unknown,Flexbox,unknown,,no,basic,likely present,wordpress defaults,basic,heavy
+https://jazergiles.com,Jazer Giles,Artist Portfolio,Unknown,Flexbox,unknown,,no,basic,basic implementation,none evident,basic,med
+https://rodneyduplessis.com,Rodney DuPlessis,Academic Portfolio,Unknown,Flexbox,unknown,,no,limited,not evident,none observed,basic,med
+https://www.konhyong.com,Kon Hyong Kim,Research Lab,Unknown,Platform Default,unknown,,no,yes,google sites defaults,minimal,srcset,med
+https://www.yujnkm.com,You-Jin Kim,Research Lab,Unknown,Flexbox,unknown,,no,yes,google sites defaults,basic google sites implementation,basic,med
+https://shape.stanford.edu,Stanford SHAPE Lab,Research Lab,Unknown,Flexbox,unknown,,no,yes,academic implementation,academic/research focused,basic,light
+https://shaokang.cc,Shaokang,Portfolio,Unknown,Flexbox,unknown,,no,basic,wordpress implementation,wordpress defaults,basic,med
+https://www.mariayablonina.com,Maria Yablonina,Professional Portfolio,Unknown,CSS Grid,unknown,,no,yes,wix implementation,website schema implemented,basic,heavy
+https://vtol.cc,VTOL,Artist Portfolio,Unknown,Platform Default,unknown,,no,limited,limited implementation,none evident,basic,heavy
+https://www.q-wh.com,Weihao Qiu,Academic Portfolio,Unknown,CSS Grid,unknown,,no,yes,wix defaults,website structured data present,basic,heavy
+https://liquifer.com,LIQUIFER Systems Group,Research Lab,Unknown,CSS Grid,unknown,,yes,basic,wordpress implementation,basic wordpress,basic,med
+https://www.agapea.si/en,Saša Spačal,Academic Portfolio,Unknown,CSS Grid,unknown,,no,basic,wordpress defaults,minimal,basic,med
+https://www.portablepalace.com,Evelina Domnitch & Dmitry Gelfand,Academic Portfolio,Unknown,Platform Default,unknown,,no,poor,limited,none evident,basic,med
+https://www.q-wh.com,Q Wang Hong,Professional Portfolio,Wix,Platform Default,unknown,,no,good,wix standard implementation,website schema,basic,med
+https://liquifer.com,Liquifer Systems Group,Academic Portfolio,WordPress Custom,Platform Default,unknown,,no,good,wordpress standard implementation,basic wordpress schema,basic,med
+https://www.agapea.si/en,Saša Spačal,Academic Portfolio,WordPress Custom,Platform Default,unknown,,no,good,basic implementation,none evident,basic,med
+https://www.portablepalace.com,Evelina Domnitch & Dmitry Gelfand,Artist Portfolio,Unknown,Platform Default,unknown,,no,poor,limited implementation,none evident,basic,med
+https://www.charlie-roberts.com,Charlie Roberts,Academic Portfolio,Unknown,Platform Default,light,,no,good,basic implementation,none evident,basic,light
+https://websites.umich.edu/~acamci,Anıl Çamcı,Academic Portfolio,Unknown,Platform Default,unknown,,no,good,basic implementation,none evident,basic,med
+https://nworb.io,Emma Brown,Academic Portfolio,Custom HTML/CSS,Platform Default,light,,no,good,basic implementation,none evident,basic,light
+https://xmzhong0v0.com,Susan Zhong,Academic Portfolio,Unknown,Platform Default,unknown,,no,good,professional social media integration,none evident,basic,med
+https://www.saharsajadieh.com,Sahar Sajadieh,Academic Portfolio,WordPress Custom,Platform Default,unknown,,no,good,wordpress standard implementation,none evident,basic,med
+https://conceptlab.com,Garnet Hertz,Academic Portfolio,Unknown,Platform Default,unknown,,no,good,basic implementation,none evident,basic,light
+https://www.syedrezaali.com,Reza Ali,Artist Portfolio,Squarespace,Platform Default,unknown,,no,good,comprehensive social media integration,json-ld metadata present,srcset,med
+https://www.cykeener.com,Cy Keener,Academic Portfolio,Squarespace,Platform Default,unknown,,no,good,squarespace standard implementation,basic squarespace schema,basic,heavy
+https://piercewarnecke.com,Pierce Warnecke,Artist Portfolio,WordPress Custom,Platform Default,unknown,,no,good,wordpress standard implementation,wordpress rss feeds,srcset,med
+https://www.fridafigueroa.com,Frida Figueroa Sanabria,Academic Portfolio,Squarespace,Platform Default,unknown,,no,good,social media optimization,squarespace standard metadata,basic,med
+https://laboratoria.art,Laboratoria.art,Artist Portfolio,WordPress Custom,Platform Default,unknown,,no,good,comprehensive social media integration,wordpress standard schema,basic,med
+https://www.burbane.net,Andres Burbano,Academic Portfolio,Unknown,Platform Default,unknown,,no,needs improvement,limited implementation,none evident,basic,light
+https://artificialnature.net,Artificial Nature,Academic Portfolio,Unknown,Platform Default,unknown,,no,good (high contrast),basic implementation,project metadata well-organized for search indexing,basic,med
+https://vwww.space,Vladimir Todorović,Artist Portfolio,Unknown,Platform Default,unknown,,no,good,basic implementation,json-ld organization schema present,srcset,med
+https://www.hawkeslab.com,Hawkes Lab,Research Lab,Wix Thunderbolt,Platform Default,unknown,,no,good,wix professional implementation,json-ld metadata with institutional information,basic,med
+https://jeremykamal.com,Jeremy Kamal,Artist Portfolio,Cargo Collective,Platform Default,unknown,,no,good,platform standard implementation,basic portfolio schema,basic,heavy
+https://shanedenson.com,Shane Denson,Academic Portfolio,Static Site,Platform Default,unknown,,no,good,basic academic implementation,none evident,basic,light
+https://marehirsch.com,Mare Hirsch,Artist Portfolio,Cargo Collective,Platform Default,unknown,,no,good,platform standard implementation,basic portfolio schema,basic,light
+https://www.aandersonportfolio.com,Aaron Anderson,Artist Portfolio,WordPress Custom,Platform Default,unknown,,no,good,platform standard implementation,basic portfolio structure,basic,med
+https://www.ashleydelvalle.com,Ashley Del Valle,Artist Portfolio,Wix Thunderbolt,Platform Default,unknown,,no,good,comprehensive wix social media integration,advanced wix schema implementation,lazy,heavy
+https://www.yiranxiao.com,Yiran Xiao,Academic Portfolio,Unknown,Platform Default,unknown,,no,good,basic implementation,none evident,basic,med
+https://www.carstennicolai.de,Carsten Nicolai,Artist Portfolio,Unknown,Platform Default,light,,no,good,limited implementation,semantic url structure supports indexing,basic,light
+https://www.mikegao.com,Mike Gao,Artist Portfolio,Unknown,Platform Default,unknown,,no,needs improvement,limited implementation,none evident,basic,heavy
+https://www.danielcanogar.com,Daniel Canogar,Artist Portfolio,Unknown,Platform Default,unknown,,no,good,basic implementation with multilingual considerations,none evident,basic,med
+https://sterlingcrispin.com,Sterling Crispin,Artist Portfolio,Custom HTML/CSS,Platform Default,unknown,,no,good,basic implementation,none evident,basic,med
+https://www.feleciadavistudio.com,Felecia Davis Studio,Academic Portfolio,Squarespace,Platform Default,unknown,,no,good,comprehensive squarespace social integration,json-ld metadata with academic/research context,basic,med
+https://ehsansayyad.com,Ehsan Sayyad,Artist Portfolio,Unknown,Platform Default,unknown,,no,needs improvement,limited implementation,none evident,basic,heavy
+https://ecmc.rochester.edu/rdm,Robert Morris,Academic Portfolio,Custom HTML/CSS,Platform Default,light,,no,standard,limited academic implementation,none evident,basic,light
